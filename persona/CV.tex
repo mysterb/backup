@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+
+%
+% Creator Peilin Li
+% Contact me via twitter/wechat: @pe1l1nl1
+% linkedin.com/peill and/or github/ppeill
+% Inspired by Peppa Pig 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{hyperref} %Hyperlink lib
+
+\usepackage[left=0.40in,top=0.3in,right=0.75in,bottom=0.1in]{geometry} % Document margins
+\usepackage{fontawesome}
+\usepackage{times}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+% \begin{center}
+
+% \end{center}
+\name{THANG NGUYEN} % Your name 
+
+
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{\faGithub{ github.com/mysterb} \faEnvelope{ huuthang96@gmail.com}}
+\address{\faMapMarker{ Seoul, South Korea} \faPhone(+82)-10-2501-3219} % Your address
+
+\begin{document}
+{ Electrical \& Communication background and Master in Computer Science, seeking for a challenging position applying Machine Learning and Deep Learning. Experienced in computer vision, object detection, pattern recognition }
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Hongik University, South Korea } \hfill {\em 2020 - present} 
+\\{ \textit {Master in Computer Science  }} 
+
+{\bf Da Nang University of Technology (DUT), Vietnam} \hfill {\em 2014 - 2019} 
+\\ { \textit {Bachelor in Eletricals \& Communication Engineering}} \hfill
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages: \ & Python, C/C++, Matlab \\
+
+Frameworks/Libraries: \ & Pytorch, Tensorflow, Keras, Pandas, Numpy, Scikit-Learn, OpenCV \\
+Research Focus:  \ & Machine Learning/Deep Learning applied in Pattern Recognition, Object detection \\ 
+\end{tabular}
+
+\end{rSection}
+
+% \begin{rSection}{Carrier Objective}
+%  To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.
+% \end{rSection}
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Achievements}
+- Global Korea Scholarship (GKS) for Master degree at Hongik University, South Korea (2020-2022) \\
+- 6-month fully funded internship at National Chung-Cheng University, Taiwan (2019) \\
+- 2\textsuperscript{nd} place at Fast Tech Show (Faculty research conference) (2019) \\
+- TFI-SCALE: DUT represent student at Singapore Polytechnic, Singapore, 2017
+\end{rSection}
+
+\begin{rSection}{Research Experience}
+
+{\bf Master Student} \hfill {\em Fulltime} 
+\\{\textit{ Hongik University, South Korea}} \hfill {\em 2020 - present} 
+\item \textbf{Vehicle's Orientation Detection using Single-stage Detector}: \\
+- This projects aims to detect vehicles' orientation in aerial images in real-time. By applying Angle related Intersection over Union (ArIoU) to the backbone CSPDarknet53 of the You Only Look Once (YOLOv4) network, the proposed method is capable of predicting both location and orientation of the vehicles in aerial images. Our approach achieved higher than 90\% precision on 3 public datasets: DLR Munich, VEDAI, UCAS-AOD. \vspace{1.5mm}\\
+- Publication: {\small Vehicle's Orientation Detection using Single-stage Detector - \textbf {IKEEE} \href{https://arxiv.org/pdf/2002.03894.pdf}{(\textit{link})}} \\
+
+{\bf Assistant researcher} \hfill {\em Part-time} 
+\\{\textit{Park in Seoul (PiS), South Korea}} \hfill {\em 2021 - present}
+\\ \textbf{Smart Parking system at Kintex (Korea International Exhibition Center-Commercial) (Commercial Project):}
+\\- This project's goal is to give instructions to users so that they can find the shortest path to empty parking spots, or locate their vehicles inside a parking lot from their smartphones. The application is a combination of modified You Only Look Once (YOLO) for vehicles detecting and License Plate Recognition (LPR), Multiple Hypothesis Tracking (MHT) and Kalman filter for vehicle tracking. The current released is being applied on 350 fish-lens cameras (approximately 2000 parking spots), achieves more than 95\% accuracy in car detection at 40 FPS, 80\% tracking successful rate and improving.
+
+{\bf Smart Parking Solution at WELLTZ Tower (Commercial Project)} \hfill {\em 2020 - present} 
+
+\\- This project proposes an effective method to track vehicles in a 3-floor underground parking lot. The system includes YOLO, LPR, MHT and Kalman filter to track vehicles move in different floors in multiple fish-lens cameras. The vehicle orientation is integrated into YOLO network to reduce the switch ID problem and increase the tracking rate from 80\% to 95\%.
+\\\\\\
+
+\\ {\bf AI Engineer} \hfill {\em Fulltime} 
+\\{\textit{VINISOFT, Vietnam}} \hfill {\em Sep 2019 - Dec 2019}
+\\ {\bf Auto Vending Machine:}
+\\ - Develop an auto vending machine using YOLO for object detection, designed CNN networks for face recognition and hand gesture recognition. 
+\\ - Lead the team to write a demo application (Python, PyQt) for company domestic use
+
+\\ {\bf Intern Student} \hfill {\em Fulltime} 
+\\{\textit{National Chung-Cheng University, Taiwan}} \hfill {\em Dec 2018 - June 2019}
+
+\\ {\bf Fully Convolutional Network for 3D Human Skeleton Estimation from a Single View for Action Analysis:}
+
+\\ - This project proposed a robust method to estimate 3D Human pose from 2D pose using Fully Convolutional Networks (FCNs). First, the FCNs estimate a 3D Anchor Pose from the 2D skeleton. Then, the 3D anchor pose will be regressed/refined to generate the final estimation. This approach achieved the MPJPE (Mean per joint position error) on the H36M dataset of 38.84 mm with 14 joints 2D pose as input.
+\\ - Publication: {\small Fully Convolutional Network for 3D Human Skeleton Estimation from a Single View for Action Analysis - \textbf {IEEE} \href{https://ieeexplore.ieee.org/document/8795015/citations?tabFilter=papers#citations}{(\textit{link})}}
+\end{rSection}
+
+\begin{center}
+\textit{References available on request}
+\end{center}
+
+\end{document}
